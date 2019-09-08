@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenIt\Auditing\Contracts;
+namespace Roldandvg\Auditing\Contracts;
 
 interface IpAddressResolver
 {

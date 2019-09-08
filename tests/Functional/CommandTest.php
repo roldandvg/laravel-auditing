@@ -1,8 +1,8 @@
 <?php
 
-namespace OwenIt\Auditing\Tests\Functional;
+namespace Roldandvg\Auditing\Tests\Functional;
 
-use OwenIt\Auditing\Tests\AuditingTestCase;
+use Roldandvg\Auditing\Tests\AuditingTestCase;
 
 class CommandTest extends AuditingTestCase
 {
@@ -18,7 +18,9 @@ class CommandTest extends AuditingTestCase
 
         $this->assertInstanceOf(
             \Illuminate\Foundation\Testing\PendingCommand::class,
-            $this->artisan('auditing:audit-driver', [
+            $this->artisan(
+                'auditing:audit-driver',
+                [
                     'name' => 'TestDriver',
                 ]
             )

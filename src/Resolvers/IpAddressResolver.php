@@ -1,10 +1,10 @@
 <?php
 
-namespace OwenIt\Auditing\Resolvers;
+namespace Roldandvg\Auditing\Resolvers;
 
 use Illuminate\Support\Facades\Request;
 
-class IpAddressResolver implements \OwenIt\Auditing\Contracts\IpAddressResolver
+class IpAddressResolver implements \Roldandvg\Auditing\Contracts\IpAddressResolver
 {
     /**
      * {@inheritdoc}

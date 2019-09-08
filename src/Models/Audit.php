@@ -1,12 +1,12 @@
 <?php
 
-namespace OwenIt\Auditing\Models;
+namespace Roldandvg\Auditing\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Audit extends Model implements \OwenIt\Auditing\Contracts\Audit
+class Audit extends Model implements \Roldandvg\Auditing\Contracts\Audit
 {
-    use \OwenIt\Auditing\Audit;
+    use \Roldandvg\Auditing\Audit;
 
     /**
      * {@inheritdoc}

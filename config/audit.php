@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'implementation' => OwenIt\Auditing\Models\Audit::class,
+    'implementation' => Roldandvg\Auditing\Models\Audit::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -41,10 +41,10 @@ return [
     |
     */
     'resolver' => [
-        'user'       => OwenIt\Auditing\Resolvers\UserResolver::class,
-        'ip_address' => OwenIt\Auditing\Resolvers\IpAddressResolver::class,
-        'user_agent' => OwenIt\Auditing\Resolvers\UserAgentResolver::class,
-        'url'        => OwenIt\Auditing\Resolvers\UrlResolver::class,
+        'user'       => Roldandvg\Auditing\Resolvers\UserResolver::class,
+        'ip_address' => Roldandvg\Auditing\Resolvers\IpAddressResolver::class,
+        'user_agent' => Roldandvg\Auditing\Resolvers\UserAgentResolver::class,
+        'url'        => Roldandvg\Auditing\Resolvers\UrlResolver::class,
     ],
 
     /*

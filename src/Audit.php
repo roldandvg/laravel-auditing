@@ -1,11 +1,11 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Roldandvg\Auditing;
 
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
-use OwenIt\Auditing\Contracts\AttributeEncoder;
+use Roldandvg\Auditing\Contracts\AttributeEncoder;
 
 trait Audit
 {

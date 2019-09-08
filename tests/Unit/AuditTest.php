@@ -1,14 +1,14 @@
 <?php
 
-namespace OwenIt\Auditing\Tests;
+namespace Roldandvg\Auditing\Tests;
 
 use Carbon\Carbon;
 use DateTimeInterface;
-use OwenIt\Auditing\Encoders\Base64Encoder;
-use OwenIt\Auditing\Models\Audit;
-use OwenIt\Auditing\Redactors\LeftRedactor;
-use OwenIt\Auditing\Tests\Models\Article;
-use OwenIt\Auditing\Tests\Models\User;
+use Roldandvg\Auditing\Encoders\Base64Encoder;
+use Roldandvg\Auditing\Models\Audit;
+use Roldandvg\Auditing\Redactors\LeftRedactor;
+use Roldandvg\Auditing\Tests\Models\Article;
+use Roldandvg\Auditing\Tests\Models\User;
 
 class AuditTest extends AuditingTestCase
 {
@@ -270,7 +270,7 @@ EOF;
     "audit_created_at": "$audit->created_at",
     "audit_updated_at": "$audit->updated_at",
     "user_id": 1,
-    "user_type": "OwenIt\\\Auditing\\\Tests\\\Models\\\User",
+    "user_type": "Roldandvg\\\Auditing\\\Tests\\\Models\\\User",
     "user_is_admin": true,
     "user_first_name": "Rick",
     "user_last_name": "Sanchez",

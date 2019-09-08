@@ -1,13 +1,13 @@
 <?php
 
-namespace OwenIt\Auditing\Tests;
+namespace Roldandvg\Auditing\Tests;
 
 use Orchestra\Testbench\TestCase;
-use OwenIt\Auditing\AuditingServiceProvider;
-use OwenIt\Auditing\Resolvers\IpAddressResolver;
-use OwenIt\Auditing\Resolvers\UrlResolver;
-use OwenIt\Auditing\Resolvers\UserAgentResolver;
-use OwenIt\Auditing\Resolvers\UserResolver;
+use Roldandvg\Auditing\AuditingServiceProvider;
+use Roldandvg\Auditing\Resolvers\IpAddressResolver;
+use Roldandvg\Auditing\Resolvers\UrlResolver;
+use Roldandvg\Auditing\Resolvers\UserAgentResolver;
+use Roldandvg\Auditing\Resolvers\UserResolver;
 
 class AuditingTestCase extends TestCase
 {

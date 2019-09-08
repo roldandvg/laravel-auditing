@@ -1,31 +1,31 @@
 <?php
 
-namespace OwenIt\Auditing\Events;
+namespace Roldandvg\Auditing\Events;
 
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Contracts\AuditDriver;
+use Roldandvg\Auditing\Contracts\Auditable;
+use Roldandvg\Auditing\Contracts\AuditDriver;
 
 class Auditing
 {
     /**
      * The Auditable model.
      *
-     * @var \OwenIt\Auditing\Contracts\Auditable
+     * @var \Roldandvg\Auditing\Contracts\Auditable
      */
     public $model;
 
     /**
      * Audit driver.
      *
-     * @var \OwenIt\Auditing\Contracts\AuditDriver
+     * @var \Roldandvg\Auditing\Contracts\AuditDriver
      */
     public $driver;
 
     /**
      * Create a new Auditing event instance.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable   $model
-     * @param \OwenIt\Auditing\Contracts\AuditDriver $driver
+     * @param \Roldandvg\Auditing\Contracts\Auditable   $model
+     * @param \Roldandvg\Auditing\Contracts\AuditDriver $driver
      */
     public function __construct(Auditable $model, AuditDriver $driver)
     {

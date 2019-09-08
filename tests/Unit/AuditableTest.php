@@ -1,20 +1,20 @@
 <?php
 
-namespace OwenIt\Auditing\Tests;
+namespace Roldandvg\Auditing\Tests;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Str;
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Encoders\Base64Encoder;
-use OwenIt\Auditing\Exceptions\AuditableTransitionException;
-use OwenIt\Auditing\Exceptions\AuditingException;
-use OwenIt\Auditing\Models\Audit;
-use OwenIt\Auditing\Redactors\LeftRedactor;
-use OwenIt\Auditing\Redactors\RightRedactor;
-use OwenIt\Auditing\Tests\Models\Article;
-use OwenIt\Auditing\Tests\Models\User;
+use Roldandvg\Auditing\Contracts\Auditable;
+use Roldandvg\Auditing\Encoders\Base64Encoder;
+use Roldandvg\Auditing\Exceptions\AuditableTransitionException;
+use Roldandvg\Auditing\Exceptions\AuditingException;
+use Roldandvg\Auditing\Models\Audit;
+use Roldandvg\Auditing\Redactors\LeftRedactor;
+use Roldandvg\Auditing\Redactors\RightRedactor;
+use Roldandvg\Auditing\Tests\Models\Article;
+use Roldandvg\Auditing\Tests\Models\User;
 use ReflectionClass;
 
 class AuditableTest extends AuditingTestCase
@@ -893,7 +893,7 @@ class AuditableTest extends AuditingTestCase
     public function itFailsToTransitionWhenTheAuditAuditableTypeDoesNotMatchTheModelType()
     {
         $this->expectException(AuditableTransitionException::class);
-        $this->expectExceptionMessage('Expected Auditable type OwenIt\Auditing\Tests\Models\Article, got OwenIt\Auditing\Tests\Models\User instead');
+        $this->expectExceptionMessage('Expected Auditable type Roldandvg\Auditing\Tests\Models\Article, got Roldandvg\Auditing\Tests\Models\User instead');
 
         $audit = factory(Audit::class)->make([
             'auditable_type' => User::class,
@@ -1032,7 +1032,7 @@ class AuditableTest extends AuditingTestCase
             $model->transitionTo($incompatibleAudit);
         } catch (AuditableTransitionException $e) {
             $this->assertSame(
-                'Incompatibility between [OwenIt\Auditing\Tests\Models\Article:1] and [OwenIt\Auditing\Models\Audit:3]',
+                'Incompatibility between [Roldandvg\Auditing\Tests\Models\Article:1] and [Roldandvg\Auditing\Models\Audit:3]',
                 $e->getMessage()
             );
 

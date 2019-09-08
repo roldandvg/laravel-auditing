@@ -1,13 +1,13 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Roldandvg\Auditing;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
-use OwenIt\Auditing\Contracts\Auditor;
-use OwenIt\Auditing\Console\AuditDriverCommand;
-use OwenIt\Auditing\Console\InstallCommand;
+use Roldandvg\Auditing\Contracts\Auditor;
+use Roldandvg\Auditing\Console\AuditDriverCommand;
+use Roldandvg\Auditing\Console\InstallCommand;
 
 class AuditingServiceProvider extends ServiceProvider implements DeferrableProvider
 {
@@ -35,7 +35,7 @@ class AuditingServiceProvider extends ServiceProvider implements DeferrableProvi
         ]);
 
         $this->app->singleton(Auditor::class, function ($app) {
-            return new \OwenIt\Auditing\Auditor($app);
+            return new \Roldandvg\Auditing\Auditor($app);
         });
     }
 

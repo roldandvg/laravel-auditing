@@ -1,9 +1,9 @@
 <?php
 
-namespace OwenIt\Auditing;
+namespace Roldandvg\Auditing;
 
-use OwenIt\Auditing\Contracts\Auditable;
-use OwenIt\Auditing\Facades\Auditor;
+use Roldandvg\Auditing\Contracts\Auditable;
+use Roldandvg\Auditing\Facades\Auditor;
 
 class AuditableObserver
 {
@@ -17,7 +17,7 @@ class AuditableObserver
     /**
      * Handle the retrieved event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */
@@ -29,7 +29,7 @@ class AuditableObserver
     /**
      * Handle the created event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */
@@ -41,7 +41,7 @@ class AuditableObserver
     /**
      * Handle the updated event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class AuditableObserver
     /**
      * Handle the deleted event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class AuditableObserver
     /**
      * Handle the restoring event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */
@@ -83,7 +83,7 @@ class AuditableObserver
     /**
      * Handle the restored event.
      *
-     * @param \OwenIt\Auditing\Contracts\Auditable $model
+     * @param \Roldandvg\Auditing\Contracts\Auditable $model
      *
      * @return void
      */

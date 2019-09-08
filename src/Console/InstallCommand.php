@@ -1,6 +1,6 @@
 <?php
 
-namespace OwenIt\Auditing\Console;
+namespace Roldandvg\Auditing\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
@@ -47,13 +47,13 @@ class InstallCommand extends Command
 
         $appConfig = file_get_contents(config_path('app.php'));
 
-        if (Str::contains($appConfig, 'OwenIt\\Auditing\\AuditingServiceProvider::class')) {
+        if (Str::contains($appConfig, 'Roldandvg\\Auditing\\AuditingServiceProvider::class')) {
             return;
         }
 
         file_put_contents(config_path('app.php'), str_replace(
             "{$namespace}\\Providers\EventServiceProvider::class,".PHP_EOL,
-            "{$namespace}\\Providers\EventServiceProvider::class,".PHP_EOL."        OwenIt\Auditing\AuditingServiceProvider::class,".PHP_EOL,
+            "{$namespace}\\Providers\EventServiceProvider::class,".PHP_EOL."        Roldandvg\Auditing\AuditingServiceProvider::class,".PHP_EOL,
             $appConfig
         ));
     }

@@ -1,8 +1,8 @@
 <?php
 
-namespace OwenIt\Auditing\Encoders;
+namespace Roldandvg\Auditing\Encoders;
 
-class Base64Encoder implements \OwenIt\Auditing\Contracts\AttributeEncoder
+class Base64Encoder implements \Roldandvg\Auditing\Contracts\AttributeEncoder
 {
     /**
      * {@inheritdoc}

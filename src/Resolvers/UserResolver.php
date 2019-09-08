@@ -1,11 +1,11 @@
 <?php
 
-namespace OwenIt\Auditing\Resolvers;
+namespace Roldandvg\Auditing\Resolvers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 
-class UserResolver implements \OwenIt\Auditing\Contracts\UserResolver
+class UserResolver implements \Roldandvg\Auditing\Contracts\UserResolver
 {
     /**
      * {@inheritdoc}
